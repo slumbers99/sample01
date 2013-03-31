@@ -57,7 +57,6 @@ public class ConfirmDialogFragment extends DialogFragment implements
             Fragment parentFragment = manager.findFragmentByTag(parent);
             if (parentFragment != null && parentFragment instanceof OnConfirmDialogClickListener) {
                 this.mListener = (OnConfirmDialogClickListener) parentFragment;
-                this.setTargetFragment(parentFragment, 0);
             }
         }
 
